@@ -40,7 +40,7 @@ export default function Home() {
       }
     }
     fetchUser();
-  }, []);
+  }, [showSuccess]);
 
   return (
     <>

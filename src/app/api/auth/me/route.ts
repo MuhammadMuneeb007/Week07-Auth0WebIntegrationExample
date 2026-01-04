@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const session = await auth0.getSession();
     return NextResponse.json(session?.user || null);
-  } catch (error) {
+  } catch {
     return NextResponse.json(null);
   }
 }

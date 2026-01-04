@@ -100,7 +100,7 @@ export default function CameraPage() {
       }
     };
     getCameras();
-  }, []);
+  }, [selectedCamera]);
 
   useEffect(() => {
     return () => {
