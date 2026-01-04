@@ -1,7 +1,4 @@
-import { getSession } from "@auth0/nextjs-auth0";
-import { NextResponse } from "next/server";
+// src/lib/auth0.ts
+import { Auth0Client } from "@auth0/nextjs-auth0/server";
 
-export async function GET() {
-  const session = await getSession();
-  return NextResponse.json(session?.user ?? null);
-}
+export const auth0 = new Auth0Client();
