@@ -102,7 +102,7 @@ export default function ObjectDetection({ videoRef, isActive }: Props) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         // Draw bounding boxes
-        filtered.forEach((prediction: any) => {
+        filtered.forEach((prediction: Detection) => {
           const [x, y, width, height] = prediction.bbox;
 
           // Draw box
